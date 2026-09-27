@@ -19,10 +19,10 @@ const result = document.getElementById("result")
 amount.addEventListener("input", () => {
 const hasCharactersRegex = /\D+/g
   amount.value = amount.value.replace(hasCharactersRegex, "")
-  //o replace vai pegar a expressão /\D+/g e vai procurar dentro do texto esse padrão 
+  //o replace vai pegar a expressão /\D+/g e vai procurar dentro do texto esse padrão
   // e esse padrão verifica caracteres do tipo texto e vai substituir por nada
   // ou seja, ele nao vai deixar digitar letra no input, somente números
-
+    /// oi
 })
 
 //capturando o evento de submit (enviar) do formulário
@@ -50,7 +50,7 @@ try{
 //calcula o total
     let total = amount * price
 
-    //verifica se o resultado não é um número   
+    //verifica se o resultado não é um número
 if (isNaN(total)) {
     return alert ("Por favor, digite o valor corretamente para converter.")
 }
